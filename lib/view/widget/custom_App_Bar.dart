@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class customAppBar extends StatelessWidget {
   const customAppBar({super.key});
@@ -9,7 +10,10 @@ class customAppBar extends StatelessWidget {
       children: [
         Text('Notes' , style: TextStyle(
           fontSize: 28
-        ),)
+        ),
+        ),
+        Spacer(),
+        CustoSearchIcon(),
       ],
     );
   }
