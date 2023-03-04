@@ -1,5 +1,3 @@
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CustoSearchIcon extends StatelessWidget {
@@ -16,7 +14,7 @@ class CustoSearchIcon extends StatelessWidget {
 
 
       ),
-      child: Center(
+      child: const Center(
         child: Icon(Icons.search,size: 28,),
       ),
     );

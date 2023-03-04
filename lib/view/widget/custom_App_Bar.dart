@@ -1,15 +1,16 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'Custom_Icon.dart';
 
-class customAppBar extends StatelessWidget {
-  const customAppBar({super.key});
+class CustomAppBar extends StatelessWidget {
+  const CustomAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
     return  Row(
-      children: [
+      children: const [
         Text('Notes' , style: TextStyle(
           fontSize: 28
         ),
