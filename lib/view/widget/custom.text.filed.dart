@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 // ignore: implementation_imports
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:tsk1/constants.dart';
 
 class CustomTextfiled extends StatelessWidget {
   const CustomTextfiled({super.key});
@@ -10,10 +11,13 @@ class CustomTextfiled extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      cursorColor: kPrimrayColor,
       decoration: InputDecoration(
-      border: const OutlineInputBorder(),
+        hintText: 'Title',
+      border: BuildBorder(),
       enabledBorder: BuildBorder(),
-      focusedBorder: BuildBorder()
+      focusedBorder: BuildBorder(kPrimrayColor
+      )
 
       ),
     );
