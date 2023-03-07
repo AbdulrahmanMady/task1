@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tsk1/constants.dart';
 
+import 'Custom_Button.dart';
 import 'custom.text.filed.dart';
 
 class AddNoteBottomSheet extends StatelessWidget {
@@ -39,27 +40,7 @@ class AddNoteBottomSheet extends StatelessWidget {
          
         ],
       ),
-    );
-  }
-}
-class CustomBotton extends StatelessWidget {
-  const CustomBotton({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      height: 55,
-      decoration: BoxDecoration(
-        color: kPrimrayColor
-        ,borderRadius: BorderRadius.circular(8)),
-        child: const Center(
-          child: Text('Save' ,style: TextStyle(color:Colors.black,
-          fontWeight: FontWeight.normal,
-          fontSize: 20
-          ),
-        ),
-        )
+      )
     );
   }
 }
