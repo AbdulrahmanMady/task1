@@ -9,19 +9,21 @@ class CustomBotton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      height: 55,
-      decoration: BoxDecoration(
-        color: kPrimrayColor
-        ,borderRadius: BorderRadius.circular(8)),
-        child: const Center(
-          child: Text('Save' ,style: TextStyle(color:Colors.black,
-          fontWeight: FontWeight.normal,
-          fontSize: 20
+    return GestureDetector(
+      child: Container(
+        width: MediaQuery.of(context).size.width,
+        height: 55,
+        decoration: BoxDecoration(
+          color: kPrimrayColor
+          ,borderRadius: BorderRadius.circular(8)),
+          child: const Center(
+            child: Text('Save' ,style: TextStyle(color:Colors.black,
+            fontWeight: FontWeight.normal,
+            fontSize: 20
+            ),
           ),
-        ),
-        )
+          )
+      ),
     );
   }
 }
