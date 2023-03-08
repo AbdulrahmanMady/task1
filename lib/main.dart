@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
 import 'package:tsk1/view/notes_view.dart';
 
-void main() {
+import 'constants.dart';
+
+void main() async {
+
   runApp(const Notesapp());
 }
 // ignore: camel_case_types
