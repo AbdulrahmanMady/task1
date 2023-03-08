@@ -17,7 +17,7 @@ class NoteItem extends StatelessWidget {
       },
       child:Container(
         decoration: BoxDecoration(
-          color: const Color(0xffFFcc80),
+          color: Color.fromARGB(255, 17, 134, 180),
           borderRadius: BorderRadius.circular(16)
         ),
       
